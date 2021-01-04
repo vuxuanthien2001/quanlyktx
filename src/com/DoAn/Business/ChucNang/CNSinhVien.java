@@ -21,7 +21,7 @@ public class CNSinhVien {
             if (xau.equalsIgnoreCase(SinhVienArrayList.get(i).getMasv())) {
                 kiemtra = true;
                 System.out.println("Đã tìm thấy thông tin cần sửa !!!");
-                SinhVienArrayList.set(i, new SinhVien(NhapSinhVien.masv(), NhapSinhVien.hoten(), NhapSinhVien.ngaysinh(), NhapSinhVien.gioitinh(), NhapSinhVien.diachi(), NhapSinhVien.malop(), NhapSinhVien.sdt()));
+                SinhVienArrayList.set(i, new SinhVien(xau, NhapSinhVien.hoten(), NhapSinhVien.ngaysinh(), NhapSinhVien.gioitinh(), NhapSinhVien.diachi(), NhapSinhVien.malop(), NhapSinhVien.sdt()));
             }
         }
         if (kiemtra == false)

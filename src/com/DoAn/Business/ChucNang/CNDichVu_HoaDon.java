@@ -17,7 +17,7 @@ public class CNDichVu_HoaDon {
             if (xau.equalsIgnoreCase(DVHDArrayList.get(i).getMaphong())) {
                 kiemtra = true;
                 System.out.println("Đã tìm thấy thông tin cần sửa !!!");
-                DVHDArrayList.set(i, new DichVu_HoaDon(NhapDVHD.maphong(), NhapDVHD.cs1kw(), NhapDVHD.cs2kw(), NhapDVHD.cs1m3(), NhapDVHD.cs2m3(), NhapDVHD.chiphikhac()));
+                DVHDArrayList.set(i, new DichVu_HoaDon(xau, NhapDVHD.cs1kw(), NhapDVHD.cs2kw(), NhapDVHD.cs1m3(), NhapDVHD.cs2m3(), NhapDVHD.chiphikhac()));
             }
         }
         if (kiemtra == false)

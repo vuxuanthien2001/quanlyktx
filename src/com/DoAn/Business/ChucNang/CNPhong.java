@@ -17,7 +17,7 @@ public class CNPhong {
             if (xau.equalsIgnoreCase(PhongArrayList.get(i).getMasv())) {
                 kiemtra = true;
                 System.out.println("Đã tìm thấy thông tin cần sửa !!!");
-                PhongArrayList.set(i, new Phong(NhapPhong.maphong(), NhapPhong.tenphong(), NhapPhong.masv()));
+                PhongArrayList.set(i, new Phong(NhapPhong.maphong(), NhapPhong.tenphong(), xau));
             }
         }
         if (kiemtra == false)
